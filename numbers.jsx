@@ -1,4 +1,6 @@
-﻿var myDocument = app.documents.add();
+﻿//This overlays the numbers 0 through 9 
+
+var myDocument = app.documents.add();
 
 var newRGBColor = new RGBColor();
     newRGBColor.red = 255;
