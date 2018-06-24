@@ -21,29 +21,28 @@ var myTextFrame;
 for(var i=0;i<10;i++){
     myTextFrame = myDocument.textFrames.add();
     myTextFrame.contents = i;
+
     // Set the contents and position of the text frame
     myTextFrame.position = [0,myDocument.height];
     myTextFrame.width = myDocument.width;
     myTextFrame.height = myDocument.height;
     myTextFrame.opacity = 50;
-    //myTextFrame.createOutline();
-    textArtRange = myTextFrame.textRange;
-    textArtRange.characterAttributes.fillColor = newRGBColor; 
-    textArtRange.characterAttributes.stroked = true;  
-    textArtRange.characterAttributes.strokeColor = newStrokeColor;  
-    textArtRange.characterAttributes.strokeWidth = 10;  
-    textArtRange.characterAttributes.fillOverprint = true; 
-    textArtRange.characterAttributes.strokeOverprint = true;  
+
+    //style characters
+    character = myTextFrame.textRange.characterAttributes;
+    character.fillColor = newRGBColor; 
+    character.stroked = true; 
+    character.strokeColor = newStrokeColor;  
+    character.strokeWidth = 10;  
+    character.fillOverprint = true; 
+    character.strokeOverprint = true;  
+    //textArtRange.textFont = textFonts.getByName("Metric-Semibold");
 }
 
-
-
-
-//make outlines
-
-//merge numbers
+//merge layers
 
 //create color scheme
 
 //fill random spaces
 
+//export image
